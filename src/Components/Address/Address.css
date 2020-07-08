@@ -1,0 +1,16 @@
+.addDiv{
+    margin-left:6vw;
+}
+.shippingDiv{
+    margin-top:25px;
+}
+
+.addressTray {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.addDiv .btn-warning {
+    margin: 20px;
+    font-weight: 500;
+}

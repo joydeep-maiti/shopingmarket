@@ -1,0 +1,104 @@
+.order-heading{
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 2%;
+}
+
+.order-card{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+.order-header-right{
+    float: right;
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.order-header-left{
+    display: flex;
+    width: 75%;
+}
+
+.order-header-left-in{
+    margin-right: 5%;
+}
+
+.order-image{
+    width: 220px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.order-image >img{
+    height: 140px;
+}
+
+.o1{
+    display: flex;
+    padding: 2% 0% 2% 4%;
+}
+
+.order-contentDiv{
+    margin-left: 25px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    display: grid;
+    float: left;
+}
+
+.prd-title{
+    font-size:1.0vw;
+    float: left;
+}
+
+.price{
+    margin-right: 14% !important;
+}
+
+.p-price{
+    float: left;
+    margin-left: 3%;
+    margin-top: 5%;
+    color: #B12704;
+}
+
+.p-price1{
+    float: left;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+.order-card-butn1 {
+    margin-right: 5px;
+    width: 96%;
+    margin-left: 40%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 5px !important;
+}
+
+.order-card-butn {
+    margin-right: 4px;
+    width: 96%;
+    margin-left: 1%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 5px !important;
+}
+.cancelorder-card-butn{
+    border-radius: 5px !important;
+    width: 96%;
+    margin-left: 118%;
+    margin-top: -88%;
+    margin-right: 88%;
+   
+}
+.mapDiv {
+    height: 20vh;
+}
+
+.mapDiv:last-child {
+    margin-bottom: 5px;
+}

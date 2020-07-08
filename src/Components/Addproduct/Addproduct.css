@@ -1,0 +1,42 @@
+.addProductDiv {
+    border: 2px solid gainsboro;
+    margin: 30px 0;
+    padding: 25px;
+    width: 750px;
+    border-radius: 10px;
+}
+.addProductForm{
+    width: 90%;
+}
+.label{
+
+    white-space:nowrap;
+}
+ .productControl {
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    width:90%;
+    margin-left:15%;
+    padding:1%;
+}
+.productControl:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+   
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+
+.uploadFeedback {
+    font-size: 14px;
+    color: green;
+}
+.uploadFeedbackErr {
+    font-size: 14px;
+    color: red;
+}
+
+  @media (max-width:767px) {
+      .addProductDiv {
+          margin: 30px 0;
+          width: 70vw;
+      }
+  }

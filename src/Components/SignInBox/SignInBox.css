@@ -1,0 +1,48 @@
+.signInBox {
+    color: white;
+    
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 10px;
+    border: 2px solid rgb(145, 140, 140);
+    border-radius: 5px;
+    position: relative;
+}
+
+.signInBtnContainer {
+    position: absolute;
+    top:50px;
+    width: 200px;
+    height: 70px;
+    border: 1px solid rgb(202, 196, 196);
+    border-radius: 3px;
+    background: whitesmoke;
+    z-index: 100;
+}
+
+.signInBtnDiv {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+.signInBtn {
+    background: -webkit-linear-gradient(top, rgb(248, 227, 173), rgb(238, 186, 55));
+    width: 100px;
+    border: 1px solid;
+    border-color: #c89411 #b0820f #99710d;
+    border-radius: 3px;
+    height: 33px;
+    color: black;
+}
+
+
+@media only screen and (max-width: 768px){
+    .signInBox {
+        display: none;
+    }
+    
+  }

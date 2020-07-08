@@ -1,0 +1,193 @@
+.entireDiv{
+    display: inline;
+    position: fixed;
+    height: 100% !important;
+}
+.filterIcon, .sortNameDiv{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.filterIcon >i{
+    color: rgb(199, 200, 202);
+    font-size: 15px;
+    margin-left: 7vw;
+}
+
+.filtersMainDiv{
+    padding-left: 10px;
+    width: 15vw;
+    border-right: 2px solid #ddd;
+}
+
+
+
+.filterButton{
+    display: none;
+}
+.sortButton{
+    display: none;
+}
+
+
+.firstFiltersDiv, .sortSubDiv{
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-bottom: .5rem;
+}
+.firstFiltersDiv input, .secondFiltersDiv input, .sortSubDiv input{
+    margin-right: 8px;
+}
+.firstFiltersDiv label, .secondFiltersDiv label, .sortSubDiv label {
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.seeMoreDiv{
+    /* padding-left: 10px; */
+    cursor: pointer;
+    /* text-decoration: underline; */
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    color:#2874f0;
+}
+
+/* .seeMoreDiv:hover{
+    color: black;
+} */
+
+.seeMoreDiv.hide{
+    margin-left: -100vw;
+}
+
+.secondFiltersDiv.hide{
+   position: absolute; 
+   margin-left:-100vw;
+}
+
+.secondFiltersDiv{
+    margin-top: -30px;
+    box-sizing: border-box;
+    left: 0;
+    width: 15vw;
+    padding-left: 10px;
+    
+}
+
+/* .secondFiltersDiv .abcd{
+    margin-top: -35px;
+} */
+/* .seeLessDiv{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 18px;
+    color: blue;
+} */
+.seeLessDiv{
+    cursor: pointer;
+    /* text-decoration: underline; */
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    color:#2874f0;
+}
+
+
+/* .seeLessDiv:hover{
+    color:black;
+} */
+
+.seeLessDiv.hide{
+    left: -100vw;
+}
+
+/* .sortNameDiv{
+    padding-left: 10px;
+    font-size: 24px;
+    text-decoration: underline;
+
+} */
+/* .sortSubDiv{
+    margin-top: 2px;
+    padding-left: 18px;
+    overflow: hidden;
+} */
+
+
+
+
+
+@media only screen and (max-width:768px){
+   
+   
+    .filtersMainDiv{
+        display: none;   
+    }
+    .filterButton{
+        margin-left: 10px;
+        display: inline-block;
+        width: 45vw;
+    }
+   .filtersMainDiv.show{
+       width: 95vw;
+       display: block;
+       margin-top: 10px;
+       padding: 0 5px;
+       position: absolute;
+       left: 2vw;
+       background-color: white;
+       z-index: 999;
+       border: 0.5px solid rgb(179, 175, 175);
+   }
+   .sortButton{
+       margin-left: 25px;
+       display: inline-block;
+       width: 45vw;
+   }
+   .seeMoreDiv.hide{
+    left: -100vw;
+}
+
+.sortMainDiv{
+    display: none;
+}
+label{
+    
+    color: black !important;
+}
+
+.firstFiltersDiv{
+    width: 43vw;
+    display: inline-block;
+    /* background-color: #030000; */
+}
+
+.secondFiltersDiv{
+    width: 43vw;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    /* background-color: #030000; */
+}
+
+.seeMoreDiv{
+    width: 43vw;
+    /* background-color: #030000;
+    color: white !important; */
+}
+
+.filterIcon{
+    width: 45vw;
+    /* background-color: #030000;
+    color: white !important; */
+}
+.seeLessDiv{
+    /* color: white !important; */
+}
+
+
+
+
+}

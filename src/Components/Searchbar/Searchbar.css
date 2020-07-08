@@ -1,0 +1,92 @@
+form{
+  width: 50%;
+}
+
+.dpMenu{
+  border: none;
+  outline: none;
+  border-radius: 5px 0px 0px 5px !important;
+  background-color: #febd69;
+  cursor: pointer;
+}
+
+ .input-group .dpMenu:focus{
+  border-radius: 5px 5px 5px 5px;
+  border-color: #e77600;
+  box-shadow: 0 0 3px 4px rgba(228,121,17);
+  border-right: 4px solid #e77600 ;
+}
+
+.input-group .form-control:focus{
+  border-color: #e77600;
+  box-shadow: 0 0 3px 4px rgba(228,121,17);
+} 
+
+.form-control{
+  transition: none;
+  border: none;
+  border-radius: 0px;
+  padding: 3.5%;
+}
+
+.form-control:focus{
+  border: none;
+  box-shadow: none;
+}
+
+
+
+.btn-primary{
+  border: none;
+  background-color: #febd69;
+  border-radius: 0px 5px 5px 0px !important;
+  border-color: none;
+  color: black;
+  transition: none;
+}
+
+.btn-primary:focus {
+  color:black;
+  background-color: #febd69 ;
+  border-color:  #febd69;
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active{
+  background-color:#febd69 ;
+  color: black;
+  border-color: #febd69;
+  box-shadow: none;
+}
+
+
+.btn-primary:hover{
+  background-color: #f3a847;
+  color: black;
+}
+
+ 
+option{
+  background-color: #131921 !important;
+  color:white !important;
+  border: none !important;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+ .dpMenu{
+   font-size: 5px;
+ }
+ .dpMenu:focus{
+   font-size: 8px;
+ }
+ .input-group .form-control{
+   border-radius: 5px 0px 0px 5px;
+ }
+}

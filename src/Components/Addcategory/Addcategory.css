@@ -1,0 +1,35 @@
+.addCategoryDiv {
+    margin-left: 22% !important;
+    border: 2px solid gainsboro;
+    margin: 60px 0;
+    padding: 30px;
+    width: 640px;
+    border-radius: 5px;
+}
+.addCategoryForm {
+    width: 100%;
+}
+ .categoryControl {
+    border: 1px solid gainsboro;
+    border-radius: 3px;;
+}
+.categoryControl:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+   
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+.availableCate{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  
+    column-count: 3;
+    column-width:10%;
+    white-space:nowrap;
+   
+}
+.displayCat{
+    margin-left:-18px;
+}

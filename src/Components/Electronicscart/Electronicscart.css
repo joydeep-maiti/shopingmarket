@@ -1,0 +1,279 @@
+.printDiv{
+    height:100%;
+    width:100%;
+}
+.mapDiv{
+    height:18vh;
+}
+.eMainDiv{
+    margin-left:3vw;
+}
+.priceNameDiv {
+    margin-right: 10px;
+    float:right;
+    margin-top: 25px;
+}
+.price{
+    margin-right: 130px;
+    float:right;
+}
+.emptyCart{
+      border: 2px solid gainsboro;
+    margin: 17% 10% 13% 25%;
+    width:600px;
+}
+.emptycartContent{
+    padding-top:5px;
+      float:right;
+      margin-right:9%;
+     
+}
+.emptycartImage{
+    height:200px;
+    width:300px;
+    border-radius:10px;
+   padding:10px 10px;
+
+}
+.sCart{
+    margin-left:3vw;
+}
+.cartdiv{
+    padding-top: 20px;
+    width:70vw;
+    float: left; 
+    overflow-y:auto;
+    height: 67vh; 
+   
+}
+
+.cartSummary{
+    position: fixed;
+    height: 30vw;
+    width: 23vw;
+    float: right;
+    border-radius: 5px 5px 5px 5px;
+    border-color: white;
+    box-shadow: 0 0 3px 4px rgb(214, 201, 201);
+    margin-right: 1.5vw;
+    margin-top: 4vw;
+    margin-left: 71%;
+    padding: 20px;
+}
+.pimage{
+    width: 220px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pimage >img{
+    height: 140px;
+    margin-left:46px;
+}
+ul{
+    display: block;
+ box-sizing: border-box;
+}
+
+.contentDiv{
+    margin-left: 50px;
+    /* padding-bottom: 20px; */
+    box-sizing: border-box;
+    width: 50%;
+    display: inline-block;
+    
+}
+li{
+    margin: 0;
+    list-style: none;
+    display: list-item;  
+}
+span{
+    margin: 0;
+}
+
+.secondContentDiv{
+    margin-left: 40px;
+}
+
+.proceedToBuyButton{
+position: absolute;
+bottom: 5%;
+width: 80%;
+margin-left: 25px;
+background-color: #febd69;
+border: none;
+border: 2px solid #f3a847;
+border-radius: 5px;
+padding: 4px 0px;
+}
+.signinButton{
+ width: 100%;
+ height:35px;
+margin-left: 15px;
+margin-top:10px;
+background-color: #febd69;
+border: none;
+border: 2px solid #f3a847;
+border-radius: 5px;
+white-space:nowrap;
+}
+h3{
+    margin-top:10px;
+    margin-left:10px;
+}
+.cart_items {
+    width:10vw;
+    height:15vh;
+} 
+hr { 
+    width:64vw;
+    border: none; 
+    height: 1px; 
+    background:#ddd;
+   
+} 
+
+
+.mPrice{
+    display: none;
+}
+
+.mCartSummary{
+    display: none;
+}
+
+.delete_cart{
+    color: #2387fe;
+    cursor: default;
+}
+
+.delete_cart:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.subTotal{
+    float: right;
+    margin-top: 25px;
+  
+}
+#total{
+    font-size: 21px;
+    margin-right: 32vw;
+}
+#total1{
+    font-size: 21px;
+    
+}
+.ptitle{
+    font-size:1.2vw;
+    color:#096beb;
+}
+.ptitle:hover{
+    text-decoration: underline;
+    color:#2387fe;
+}
+u{
+    color: #2387fe;
+}
+
+.cartsubTotal{
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+h4{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkoutData-div{
+    margin-bottom: 15px;
+    display: flex;
+}
+.checkoutDataSpan-title{
+    margin-right: 20px;
+    width: 60%;
+    margin-left: 5%;
+}
+
+.checkoutDataSpan{
+    width: 20%;
+}
+
+.ckout{
+    overflow-y: auto;
+    height: 45vh;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 768px){
+   
+  
+    .cartSummary{
+        display: none;
+        
+    }
+    .pimage{
+        width: 10vw;
+        float: left;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .pimage >img{
+        height: 28vw;
+        margin-left:12vw;;
+    }
+    .mCartSummary{
+        display: inline-block;
+        position: relative;
+        width: 90%;
+        height: 200px;
+        border-radius: 5px 5px 5px 5px;
+        border-color: white;
+        box-shadow: 0 0 3px 4px rgb(214, 201, 201);
+        margin: 0px 18px;
+    }
+    
+    .priceNameDiv{
+        display: none;
+    }
+    .price{
+        display: none;
+    }
+    
+   .mPrice{
+       display: inline-block;
+   }
+
+
+    .contentDiv{
+        box-sizing: border-box;
+        width:70%;
+        display: inline-block;
+        
+        
+    }
+    .pimage{
+        width: 10vw;
+        display: inline-block;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+   
+    .cartdiv{
+        width:100vw;   
+    }
+    #total{
+        font-size: 5vw;
+        margin-right: 7vw;
+    }
+    #total1{
+        font-size: 21px;
+        
+    }
+    .ptitle{
+        font-size:3.3vw;
+    }
+}

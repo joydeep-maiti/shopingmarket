@@ -1,0 +1,66 @@
+
+.addressCard .phNoSpn {
+    color: rgb(182, 31, 77);
+    font-size:medium;
+}
+.addressCard {
+    width: 225px;
+    height: 250px;
+    /* border: .5px solid rgb(225, 229, 233); */
+    /* background: linear-gradient(white,rgb(186, 252, 147)); */
+    background: linear-gradient(rgb(255, 231, 195),rgb(252, 220, 30));
+    /* background: linear-gradient(white,rgb(171, 213, 247)); */
+    /* background: linear-gradient(rgb(232, 243, 252),rgb(183, 217, 245)); */
+    border: .1rem solid rgb(99, 99, 99);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 25px;
+    cursor: pointer;
+    position: relative;
+}
+.selectedCardText {
+    position: absolute;
+    bottom: 8px;
+    right: 0px;
+    background-color: rgb(13, 100, 134);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 5px;
+    color: rgb(245, 250, 252);
+}
+
+.addNewAddress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.addNewAddress img {
+    width: 50px;
+} 
+
+.addressCard h6 {
+    color: rgb(12, 94, 161);
+}
+.addressCard h4 {
+    text-align: left;
+    margin-top: 0;
+}
+.addressCard p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: medium;
+    color: dimgray;
+}
+.addressCard span {
+    font-size: small;
+    color: rgb(124, 36, 184);
+    font-weight: 600;
+}
+.addressCard strong {
+    font-size: medium;
+    color: rgb(23, 109, 23);
+}

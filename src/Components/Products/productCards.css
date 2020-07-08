@@ -1,0 +1,118 @@
+.row{
+    margin-top: 15px;
+}
+
+.product{
+    margin-bottom:15px;
+}
+
+.productimg{
+    height: 400px;
+    width: 80%;
+    margin-left: 10%;
+    /* margin: 5%; */
+    padding: 5%;
+}
+
+.product-img{
+    margin-top: 50px;
+    display: flex;
+}
+.btn-right{
+    float:right;
+}
+
+.btn-primary {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.card{
+
+}
+
+.card-button{
+    margin-right: 4px;
+    width: 42%;
+    margin-left: 5%;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+    height: 45px;
+    font-size: larger;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.padding-rt{
+    margin-left: 15px;
+}
+.padding-rt1{
+    margin-left: 80px
+}
+
+.AddProduct-field{
+    margin:15px;
+}
+
+.label-field{
+    width: 9%;
+    margin-left: 5%;
+}
+
+.filter{
+    background-color: #e8e7e7;
+}
+
+.ui.styled.accordion {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+}
+#output_image
+{
+ max-width:300px;
+}
+
+.cardBoxSize{
+    width: 190px;
+}
+
+.inputImgStyle{
+    font-size: 10px !important;
+    font-weight: 700;
+    width: 100%;
+}
+
+.viewProduct {
+    width: 45%;
+    margin-left: 80px;
+
+}
+
+.star-ratings {
+    margin-bottom: 10px;
+}
+
+.checkMark{
+    font-size:35px;
+    color: green;
+}
+
+.remove-message{
+    margin-top: -25px;
+}
+
+.remove-p{
+    margin-top: -15px;
+}

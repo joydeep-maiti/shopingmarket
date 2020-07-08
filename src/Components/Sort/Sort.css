@@ -1,0 +1,38 @@
+.sorting{
+    display:none;
+}
+@media only screen and (max-width:768px){
+
+    .mainBlock{
+        display: inline;
+        /* position: relative; */
+    }
+    .sorting{
+        width: 95vw;
+        background-color: white;
+        display: block;
+        position: absolute;
+        left: 2vw;
+        margin-top: -100vw;
+        padding-bottom: 20px;
+        z-index: 999;
+        border: 0.5px solid rgb(179, 175, 175);
+    }
+    .sorting.show{
+        margin-top: 10px;
+    }
+    .sortByName{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px;
+    }
+    .sorting input{
+        margin-right: 8px;
+        margin-left: 10px;
+    }
+    .sorting label {
+        vertical-align: middle;
+        font-size: 13px;
+    }
+
+}

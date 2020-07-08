@@ -1,0 +1,90 @@
+.addimg{
+    margin-bottom: 15px !important;
+    width: 100%;
+    margin: auto;
+}
+
+.product-img{
+    margin-top: 50px;
+    display: flex;
+}
+
+.AddProduct-field{
+    margin:15px;
+}
+
+.label-field{
+    width: 13%;
+    margin-left: 5%;
+}
+
+.ui.styled.accordion {
+    width: 70% !important;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+
+.cardBoxSize{
+    width: 190px;
+}
+
+.inputImgStyle{
+    font-size: 10px !important;
+    font-weight: 700;
+    width: 100%;
+}
+
+.imgUrl-div{
+    margin-top: 5%;
+}
+
+.label-img{
+    margin-left: 1%;
+    width: 12%;
+}
+
+.urlInput{
+    width: 40%;
+}
+
+.upload-button{
+    float: right;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.upload-div{
+    margin-bottom:  5%;
+}
+
+.productControl {
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    width:90%;
+    margin-left:35%;
+    padding:1%;
+}
+
+.productControl:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+   
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+
+.uploadFeedback {
+    font-size: 14px;
+    color: green;
+}
+.uploadFeedbackErr {
+    font-size: 14px;
+    color: red;
+}
+
+.submit-div{
+    margin: 3% 5% 5% 76%;
+}
+
+.sizebox{
+    margin-right: 20px;
+}

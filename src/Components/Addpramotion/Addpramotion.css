@@ -1,0 +1,42 @@
+.addPramotionDiv {
+    border: 2px solid gainsboro;
+    margin: 40px 0;
+    padding: 25px;
+    width: 750px;
+    border-radius: 10px;
+    margin-left: 25% !important;
+}
+.label{
+
+    white-space:nowrap;
+}
+.addPramotionForm {
+    width: 95%;
+}
+
+
+.productControl {
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    width:90%;
+    padding:1%;
+    margin-left:0px;
+}
+.productControl:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+   
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+
+ .pramotionControl {
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    width:90%;
+    /* margin-left:15%; */
+    padding:1%;
+}
+.pramotionControl:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+   
+    border: 1px solid rgba(81, 203, 238, 1);
+  }

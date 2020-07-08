@@ -1,0 +1,50 @@
+.orderConfmDiv {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 1px 1px 5px 1px #ccc; */
+    /* padding: 24px 30px; */
+    display: flex;
+}
+.tickDiv {
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    padding: 22px 17px;
+    border: 1px solid green;
+    border-radius: 88px;
+
+}
+.tickDiv1 {
+    width: 8px;
+    height: 2px;
+    transform: rotate(45deg) translateY(8px) translateX(3px);
+    background-color: green;
+}
+.tickDiv2 {
+    width: 22px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: green;
+}
+
+.orderInfoDiv {
+    padding: 25px;
+}
+
+
+@media (max-width:576px) {
+    .tickDiv {
+        margin: 10px auto
+    }
+    .orderInfoDiv {
+        padding: 20px 20px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .orderConfmDiv {
+        width: 350px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,25 @@
+.addressFormDiv {
+    border: 1px solid gainsboro;
+    margin: 30px 0;
+    padding: 30px;
+    width: 600px;
+    border-radius: 5px;
+}
+.addressFormDiv form {
+    width: 100%;
+}
+.addressFormDiv .form-control {
+    border: 0.5px solid gainsboro
+}
+.form-control.is-valid, .was-validated .form-control:valid {
+    background-image: none;
+}
+
+
+
+@media (max-width:767px) {
+    .addressFormDiv {
+        margin: 30px 0;
+        width: 90vw;
+    }
+}
