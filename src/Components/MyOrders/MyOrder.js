@@ -56,7 +56,7 @@ class ProductDetails extends Component {
         }
 
         return (
-            <div>
+            <div className="myOrdersPage">
                 <h1 className="order-heading">My Orders</h1>
                 {this.props.myOrders ? sortedMyOrder.map((OrdersItem) =>
                     <div className="card order-card">
@@ -96,14 +96,10 @@ class ProductDetails extends Component {
 
                                 <div className="mapDiv">
 
-                                    <div className="price">
-                                        <div><button className="btn btn-primary order-card-butn" onClick={() => this.buyNowFn(item.productDetails)}>Buy Again</button></div>
-                                        <div><button className="btn btn-danger cancelorder-card-butn" onClick={() => this.delete(OrdersItem.orderId, item.subOrderId)} >Cancel</button></div>
-                                        {/* <p><b><i class="fas fa-rupee-sign"></i>{item.productDetails.price.toLocaleString()}</b></p> */}
-                                    </div>
                                     <div className="order-image">
                                         <img src={item.productDetails.thumbnailUrl} alt="Electronics" className="cart_items" />
                                     </div>
+                                    
                                     <div className="order-contentDiv">
                                         <div>
                                             <ul>
@@ -117,6 +113,11 @@ class ProductDetails extends Component {
                                             {/* <span>|</span>&nbsp;&nbsp;
                                                 <span className="delete_cart" onClick={() => this.addToSaveForLaterFn(item)}>Save for later</span>&nbsp;&nbsp; */}
                                         </div>
+                                    </div>
+                                    <div className="price">
+                                        <div><button className="btn btn-primary order-card-butn" onClick={() => this.buyNowFn(item.productDetails)}>Buy Again</button></div>
+                                        <div><button className="btn btn-danger cancelorder-card-butn" onClick={() => this.delete(OrdersItem.orderId, item.subOrderId)} >Cancel</button></div>
+                                        {/* <p><b><i class="fas fa-rupee-sign"></i>{item.productDetails.price.toLocaleString()}</b></p> */}
                                     </div>
                                 </div>)
                                 : ""

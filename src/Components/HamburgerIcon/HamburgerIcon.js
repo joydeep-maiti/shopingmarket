@@ -56,8 +56,8 @@ class HamburgerIcon extends Component{
                     <li className="menuList"><Link to="/home" className="menuLink">Home</Link></li>
                     <li className="menuList"><Link to="/aboutus" className="menuLink">About us</Link></li>
                     <li className="menuList"><Link to="/contactus" className="menuLink">Contact us</Link></li>
-                    <li className="menuList"><Link to="/myOrders" className="menuLink">My Orders</Link></li>
-                    {this.props.auth &&<li className="menuList"><Link to="/profile" className="menuLink">My Profile</Link></li>}
+                    {this.props.auth && this.props.auth.is_authenticated &&<li className="menuList"><Link to="/myOrders" className="menuLink">My Orders</Link></li>}
+                    {this.props.auth && this.props.auth.is_authenticated &&<li className="menuList"><Link to="/profile" className="menuLink">My Profile</Link></li>}
                     {this.props.auth && this.props.auth.role && this.props.auth.role==="admin" && <li className="menuList"><Link to="/admin/add_product" className="menuLink">Admin</Link></li>}
 
                 </ul>

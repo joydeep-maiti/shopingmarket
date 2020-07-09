@@ -279,7 +279,6 @@ const getProductsReducer = (state = initialState, action) => {
             console.log("GET ORders reducer", myOrders)
             return {
                 ...state,
-                cart: [],
                 myOrders: myOrders
             }
 

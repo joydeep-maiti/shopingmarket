@@ -8,7 +8,7 @@ class Cart extends React.Component{
     render(){
         return(
             
-            <div className="cartPage">
+            <div className="cartPage myOrdersPage">
                    <Electronicscart /> 
                  
             </div>

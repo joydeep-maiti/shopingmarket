@@ -25,9 +25,9 @@
     margin-right: 5%;
 }
 
-.order-image{
+.myOrdersPage .order-image{
     width: 220px;
-    float: left;
+    /* float: left; */
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -40,33 +40,35 @@
     padding: 2% 0% 2% 4%;
 }
 
-.order-contentDiv{
-    margin-left: 25px;
-    padding-bottom: 20px;
+.myOrdersPage .order-contentDiv{
+    /* margin-left: 25px; */
+    padding: 20px;
     box-sizing: border-box;
-    width: 50%;
-    display: grid;
-    float: left;
+    width: 56%;
+    /* display: grid; */
+    /* float: left; */
 }
 
 .prd-title{
-    font-size:1.0vw;
-    float: left;
+    font-size:1rem;
+    /* float: left; */
 }
 
-.price{
-    margin-right: 14% !important;
+.myOrdersPage .price{
+    margin-right: 0 !important;
+    display: flex;
 }
 
-.p-price{
-    float: left;
+.myOrdersPage .p-price{
+    /* float: left; */
     margin-left: 3%;
     margin-top: 5%;
     color: #B12704;
+    
 }
 
 .p-price1{
-    float: left;
+    /* float: left; */
     margin-left: 3%;
     margin-top: 5%;
 }
@@ -90,15 +92,23 @@
 .cancelorder-card-butn{
     border-radius: 5px !important;
     width: 96%;
-    margin-left: 118%;
-    margin-top: -88%;
-    margin-right: 88%;
+    margin-left: 1rem;
+    margin-top: 15px;
+    /* margin-right: 88%; */
    
 }
-.mapDiv {
-    height: 20vh;
+.myOrdersPage .mapDiv {
+    height: fit-content;
+    display: flex;
+    margin: 0.5rem 0;
 }
 
 .mapDiv:last-child {
     margin-bottom: 5px;
+}
+.myOrdersPage .secondContentDiv {
+    display: flex;
+}
+.myOrdersPage .mapDiv li {
+    text-align: left;
 }

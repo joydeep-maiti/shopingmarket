@@ -98,11 +98,16 @@ class Electronicscart extends Component {
 
                     <div className="eMainDiv">
                         <div className="cartdiv">
-                            <div className="priceNameDiv">
-                                <h5 className="price">Price</h5>
-                            </div>
-                            <div className="sCart">
-                                <h2><strong>Shopping Cart</strong></h2>
+                            <div className="cartHeadingDiv">
+                                <div className="pimage">
+                                    <h2><strong>Shopping Cart</strong></h2>
+                                </div>
+                                <div className="contentDiv">
+
+                                </div>
+                                <div className="priceNameDiv">
+                                    <h5 className="price">Price</h5>
+                                </div>
                             </div>
                             <div className="mCartSummary">
                                 <h5>Checkout Summary</h5>
@@ -115,10 +120,8 @@ class Electronicscart extends Component {
                             {this.props.product ? this.props.product.map((item) =>
 
                                 <div className="mapDiv">
-                                    <hr />
-                                    <div className="price">
-                                        <p><b><i class="fas fa-rupee-sign"></i>{item.productDetails.price.toLocaleString()}</b></p>
-                                    </div>
+                                    {/* <hr /> */}
+                                    
                                     <div className="pimage">
                                         <img src={item.productDetails.thumbnailUrl} alt="Electronics" className="cart_items" />
                                     </div>
@@ -149,12 +152,15 @@ class Electronicscart extends Component {
                                     </div>
 
                                     </div>
+                                    <div className="price">
+                                        <p><b><i class="fas fa-rupee-sign"></i>{item.productDetails.price.toLocaleString()}</b></p>
+                                    </div>
 
                                 </div>)
                                 : ""
                             }
 
-                            <hr />
+                            {/* <hr /> */}
 
 
 
@@ -179,10 +185,7 @@ class Electronicscart extends Component {
                             {this.props.savedForLater ? this.props.savedForLater.map((item) =>
 
                                 <div className="mapDiv">
-                                    <hr />
-                                    <div className="price">
-                                        <p><b><i class="fas fa-rupee-sign"></i>{item.productDetails.price.toLocaleString()}</b></p>
-                                    </div>
+                                   
                                     <div className="pimage">
                                         <img src={item.productDetails.thumbnailUrl} alt="Electronics" className="cart_items" />
                                     </div>
@@ -212,6 +215,9 @@ class Electronicscart extends Component {
                                             <span className="delete_cart" onClick={() => this.props.removeAndAddToCart(item, this.props.auth)}>Add to Cart</span>&nbsp;&nbsp;
                                     </div>
 
+                                    </div>
+                                    <div className="price">
+                                        <p><b><i class="fas fa-rupee-sign"></i>{item.productDetails.price.toLocaleString()}</b></p>
                                     </div>
 
                                 </div>)
