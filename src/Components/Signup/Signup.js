@@ -243,6 +243,8 @@ class Signup extends Component {
                         </Form.Control.Feedback>
                             </Form.Group>
                         </Form.Row>
+                        {!this.state.validated.emailId && 
+                            <div className="errm">Enter the correct mail ID</div>}
 
                         <Form.Row>
                             <Form.Group as={Col} controlId="validationCustom04">
@@ -263,6 +265,8 @@ class Signup extends Component {
                         </Form.Control.Feedback>
                             </Form.Group>
                         </Form.Row>
+                        {!this.state.validated.mobile && 
+                            <div className="errm">Enter the 10 digit mobile number</div>}
 
                         <Form.Row>
                             <Form.Group as={Col} controlId="validationCustom04">
@@ -281,6 +285,8 @@ class Signup extends Component {
                         </Form.Control.Feedback>
                             </Form.Group>
                         </Form.Row>
+                        {!this.state.validated.password && 
+                            <div className="errm">Password must be atleast 6 digits</div>}
 
                         <Form.Row>
                             <Form.Group as={Col} controlId="validationCustom04">
@@ -298,7 +304,10 @@ class Signup extends Component {
                                     *Please Re-enter the correct password.
                         </Form.Control.Feedback>
                             </Form.Group>
+                           
                         </Form.Row>
+                        {!this.state.validated.confirmPassword && 
+                            <div className="errm">Re-Enter the correct password </div>}
 
                         <button className="logInBtn" type="submit" onClick={this.handleSubmit}>Sign up</button>
 

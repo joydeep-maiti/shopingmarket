@@ -95,6 +95,11 @@ sup {
     color : black;
 }
 
+.errm{
+    color: #c40000;
+    margin-bottom: 10px;
+}
+
 /* .form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
     color: black;
 } */
