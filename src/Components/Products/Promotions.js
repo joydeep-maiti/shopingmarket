@@ -11,7 +11,7 @@ class Promotions extends Component {
         sources: []
     }
     componentDidMount() {
-        axios.get(`https://marketplace--server.herokuapp.com/promotions?category=${this.props.category}`).then((response) => {
+        axios.get(`https://shopingmarketapi.herokuapp.com/promotions?category=${this.props.category}`).then((response) => {
             console.log("kkkkk", response);
             this.setState({ sources: response.data });
         })
