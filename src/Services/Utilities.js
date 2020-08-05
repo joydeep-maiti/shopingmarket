@@ -8,7 +8,7 @@ class Utilities extends Component {
     }
     componentDidMount(){
         // axios.get(`http://localhost:5000/category`).then((response) =>{
-        axios.get(`https://marketplace--server.herokuapp.com/category`).then((response) =>{
+        axios.get(`https://shopingmarketapi.herokuapp.com/category`).then((response) =>{
             console.log(response);
             this.setState({categories:response.data.data });
         })

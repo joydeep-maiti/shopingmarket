@@ -19,7 +19,7 @@ class Addcategory extends Component {
        this.categoryList();
     }
     categoryList=  ()=>{
-        axios.get(`https://marketplace--server.herokuapp.com/category`).then((response) => {
+        axios.get(`https://shopingmarketapi.herokuapp.com/category`).then((response) => {
             this.setState({ categorienames: response.data.data });
         })
     }

@@ -17,7 +17,7 @@ class Addpramotion extends Component{
     state=initialState;
 
     componentDidMount(){
-        axios.get(`https://marketplace--server.herokuapp.com/category`).then((response) =>{
+        axios.get(`https://shopingmarketapi.herokuapp.com/category`).then((response) =>{
             this.setState({categories:response.data.data });
         })
     }
@@ -42,7 +42,7 @@ class Addpramotion extends Component{
                     url:this.state.pramotionURL
                 }
             }
-            axios.post(`https://marketplace--server.herokuapp.com/promotions`,params )
+            axios.post(`https://shopingmarketapi.herokuapp.com/promotions`,params )
             .then((response) =>{
                 if(response.status === 201) {
                     this.setState({

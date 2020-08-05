@@ -27,7 +27,7 @@ const initialState = {
 class Addproduct extends Component {
     state = initialState;
     componentDidMount() {
-        axios.get(`https://marketplace--server.herokuapp.com/category`).then((response) => {
+        axios.get(`https://shopingmarketapi.herokuapp.com/category`).then((response) => {
             this.setState({ categorienames: response.data.data });
         })
     }

@@ -11,7 +11,7 @@ class Pramotions extends Component{
         sources:[]
     }
     componentDidMount(){
-        axios.get(`https://marketplace--server.herokuapp.com/promotions`).then((response) =>{
+        axios.get(`https://shopingmarketapi.herokuapp.com/promotions`).then((response) =>{
             console.log("promotions",response.data);
             this.setState({sources:response.data});
         })
