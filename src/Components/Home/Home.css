@@ -15,4 +15,8 @@
         flex-wrap: wrap;
         margin-bottom: 8vh;
     }
+    .homeContainer {
+        width: 100%;
+        margin-left: 0;
+    }
 }
