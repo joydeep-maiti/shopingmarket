@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Sort.css'
+import { connect } from 'react-redux';
 
 class Sort extends Component{
     state={
@@ -10,25 +11,34 @@ class Sort extends Component{
             this.setState({showSort: !this.state.showSort})
         )
     }
+
+    handleOnchange = (e) => {
+        // console.log("EVENT", e.target.value)
+        this.props.onHandleSort(e);
+    }
+
     render(){
+        console.log("SORT", this.props.sort)
         return(
             <div className="mainBlock">
                  <button className="sortButton" onClick={this.onMobileDivClick1}>Sort</button>
                  
             <div className={`sorting ${this.state.showSort ? 'show' : 'hide'}`}>
             <div className="sortByName">Sort By</div>
-                        <input type="checkbox" id="Relevance" name="Relevance" value="Relevance" />
-                        <label for="Relevance"> Relevance</label><br></br>
-                        <input type="checkbox" id="Price(Lowest First)" name="Price(Lowest First)" value="Price(Lowest First)" />
-                        <label for="Price(Lowest First)"> Price (Lowest First)</label><br></br>
-                        <input type="checkbox" id="Price(Highest First)" name="Price(Highest First)" value="Price(Highest First)" />
-                        <label for="Price(Highest First)"> Price (Highest First)</label><br></br>
-                        <input type="checkbox" id="What's New" name="What's New" value="What's New" />
-                        <label for="What's New"> What's New</label><br></br>
+                <input type="radio" id="Price(Lowest First)" name="price" value="low" onChange={(e)=>this.handleOnchange(e)} checked={this.props.sort==="low"}/>
+                <label for="Price(Lowest First)"> Price (Lowest First)</label><br></br>
+                <input type="radio" id="Price(Highest First)" name="price" value="high" onChange={(e)=>this.handleOnchange(e)} checked={this.props.sort==="high"}/>
+                <label for="Price(Highest First)"> Price (Highest First)</label><br></br>
             </div>
-            </div>
+            </div> 
         )
     }
 }
 
-export default Sort;
+const mapStateToProps = (state) => {
+    return {
+        sort: state.sort
+    }
+}
+
+export default connect(mapStateToProps)(Sort);

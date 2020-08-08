@@ -73,9 +73,12 @@ class Products extends React.Component {
         return (
             <div className='container-fluid'>
                 <div className="row">
-                    <div className="col-lg-2 col-md-2 col-xs-0 filter">
+                    <div>
                     <Filters />
                     </div>
+                    {/* <div className="col-lg-2 col-md-2 col-xs-0 filter">
+                    <Filters />
+                    </div> */}
                     <div className="col-lg-10 col-md-10 col-xs-12">
                         <div className="row">
                             <Promotions category={(this.props.location.pathname).slice(10)} />

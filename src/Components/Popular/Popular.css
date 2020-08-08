@@ -16,7 +16,7 @@
 }
 .popularItem {
     cursor: pointer;
-    z-index: 9;
+    /* z-index: 9; */
 }
 .popularItem div{
     width: fit-content;

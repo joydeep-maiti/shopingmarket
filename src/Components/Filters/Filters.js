@@ -31,7 +31,7 @@ class Filters extends Component {
     }
 
     handleOnchange = (e) => {
-        // console.log("EVENT", e.target.value)
+        console.log("EVENT", e.target.value)
         this.props.setSort(e.target.value);
     }
 
@@ -41,7 +41,7 @@ class Filters extends Component {
                      
                  <div className="entireDiv">
                 <button className="filterButton" onClick={this.onMobileDivClick}><i class="fas fa-filter"></i>Filters</button>
-                <Sort />
+                <Sort onHandleSort={(e)=>this.handleOnchange(e)}/>
                 
                 <div className={`filtersMainDiv ${this.state.showDiv2 ? 'show' : 'hide'}`}>
                     <div className="filterIcon">

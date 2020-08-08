@@ -1,7 +1,7 @@
 .entireDiv{
     display: inline;
-    position: fixed;
-    height: 100% !important;
+    /* position: fixed;
+    height: 100% !important; */
 }
 .filterIcon, .sortNameDiv{
     font-size: 20px;
